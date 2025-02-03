@@ -1,0 +1,30 @@
+{
+  "server": {
+    "applicationConnectors": [
+      {
+        "type": "http",
+        "port": 8080
+      }
+    ],
+    "adminConnectors": [
+      {
+        "type": "http",
+        "port": 8081
+      }
+    ]
+  },
+  "logging": {
+    "level": "INFO",
+    "appenders": [
+      {
+        "type": "console"
+      }
+    ]
+  },
+  "database": {
+    "driverClass": "com.mysql.cj.jdbc.Driver",
+    "url": "jdbc:mysql://localhost:3306/attendance?useSSL=false&serverTimezone=UTC",
+    "user": "root",
+    "password": ""
+  }
+}
